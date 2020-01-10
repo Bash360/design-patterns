@@ -1,7 +1,7 @@
 package state;
 /*
  * state pattern used for when the implementation changes upon state changes
- * it supports the open and close design principle which is our classes should be open for extension but closed
+ * it supports the open closed design principle which is states our classes should be open for extension but closed
  * for modification.
  * it also helps for a cleaner and more robust code base
  * */
