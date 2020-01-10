@@ -9,7 +9,7 @@ public class Main {
     editor.setContent("my name is mark");
     history.push(editor.createState());
 
-    editor.setContent("close friends calls me bash ");
+    editor.setContent("close friends call me bash ");
     history.push(editor.createState());
     editor.setContent("mark bashir");
     editor.restore(history.pop());
