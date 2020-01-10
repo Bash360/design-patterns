@@ -1,5 +1,6 @@
 package state;
 
+/** The type Brush tool. */
 public class BrushTool implements Tool {
   @Override
   public void mouseDown() {

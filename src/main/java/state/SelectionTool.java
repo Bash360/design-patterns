@@ -1,5 +1,6 @@
 package state;
 
+/** The type Selection tool. */
 public class SelectionTool implements Tool {
   @Override
   public void mouseDown() {

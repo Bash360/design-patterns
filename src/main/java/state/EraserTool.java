@@ -1,5 +1,6 @@
 package state;
 
+/** The type Eraser tool. */
 public class EraserTool implements Tool {
   @Override
   public void mouseDown() {
