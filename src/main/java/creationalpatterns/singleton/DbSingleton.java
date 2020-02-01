@@ -5,7 +5,7 @@ public class DbSingleton {
 
   private static DbSingleton instance = new DbSingleton();
 
-  public static DbSingleton getDb() {
+  public static DbSingleton getInstance() {
     return DbSingleton.instance;
   }
 }
