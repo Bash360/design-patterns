@@ -12,9 +12,8 @@ public class LazyLoadedSingleton {
 
   public static LazyLoadedSingleton getInstance() {
     if (instance == null) {
-      synchronized (LazyLoadedSingleton.class) {
-        instance = new LazyLoadedSingleton();
-      }
+
+      instance = new LazyLoadedSingleton();
     }
     return instance;
   }
