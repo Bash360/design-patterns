@@ -1,11 +1,11 @@
-import state.Canvas;
-import state.EraserTool;
-
 public class Main {
   public static void main(String[] args) {
-    Canvas canvas = new Canvas();
-    canvas.setCurrentTool(new EraserTool());
-    canvas.mouseDown();
-    canvas.mouseUp();
+    Runtime singletonRuntime = Runtime.getRuntime();
+    System.out.println(singletonRuntime);
+    Runtime secondRunTIme = Runtime.getRuntime();
+    System.out.println(secondRunTIme);
+    if (secondRunTIme.equals(singletonRuntime)) {
+      System.out.println("the same instance singleton");
+    }
   }
 }
