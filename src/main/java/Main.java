@@ -1,9 +1,9 @@
-import creationalpatterns.singleton.DbSingleton;
+import creationalpatterns.singleton.LazyLoadedSingleton;
 
 public class Main {
   public static void main(String[] args) {
-    DbSingleton db = DbSingleton.getInstance();
-    DbSingleton second = DbSingleton.getInstance();
+    LazyLoadedSingleton db = LazyLoadedSingleton.getInstance();
+    LazyLoadedSingleton second = LazyLoadedSingleton.getInstance();
     System.out.println(db);
     System.out.println(second);
   }

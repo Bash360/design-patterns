@@ -1,7 +1,7 @@
 package creationalpatterns.singleton;
 
 public class LazyLoadedSingleton {
-  private static LazyLoadedSingleton instance = null;
+  private static volatile LazyLoadedSingleton instance = null;
 
   private LazyLoadedSingleton() {}
 
