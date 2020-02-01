@@ -5,13 +5,16 @@ public class LazyLoadedSingleton {
 
   private LazyLoadedSingleton() {
     if (instance != null) {
+
       throw new RuntimeException("use get instance to create object");
     }
   }
 
   public static LazyLoadedSingleton getInstance() {
     if (instance == null) {
-      instance = new LazyLoadedSingleton();
+      synchronized (LazyLoadedSingleton.class) {
+        instance = new LazyLoadedSingleton();
+      }
     }
     return instance;
   }
