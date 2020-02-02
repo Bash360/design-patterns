@@ -1,4 +1,10 @@
 package creationalpatterns.builder;
+/*
+ * used to creat objects that have alot of parameters and options for creating
+ * objects with either using all parameters or some
+ * object creation is handled by the builder which is an inner class, and the object is
+ * immutable that is no setters
+ * */
 
 public class LunchOrder {
   private String bread = null;
