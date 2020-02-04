@@ -2,7 +2,7 @@ package creationalpatterns.factorymethod.Message;
 
 public class TextMessageCreator extends MessageCreator {
   @Override
-  public Message createMessage() {
+  Message createMessage() {
     return new TextMessage();
   }
 }

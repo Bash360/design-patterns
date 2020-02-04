@@ -8,5 +8,5 @@ public abstract class MessageCreator {
     return msg;
   }
 
-  public abstract Message createMessage();
+  abstract Message createMessage();
 }
