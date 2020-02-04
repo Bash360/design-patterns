@@ -1,4 +1,4 @@
-package factorymethod;
+package creationalpatterns.factorymethod.Animal;
 
 /** The interface Animal. */
 public interface Animal {

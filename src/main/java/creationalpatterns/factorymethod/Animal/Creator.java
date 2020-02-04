@@ -1,4 +1,4 @@
-package factorymethod;
+package creationalpatterns.factorymethod.Animal;
 
 /** The interface Creator. */
 public interface Creator {
@@ -7,5 +7,5 @@ public interface Creator {
    *
    * @return the animal
    */
-  Animal factory();
+  Animal create();
 }

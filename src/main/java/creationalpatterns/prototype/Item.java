@@ -1,9 +1,14 @@
 package creationalpatterns.prototype;
 
-public abstract class Item {
+public abstract class Item implements Cloneable {
   private String title;
   private double price;
   private String url;
+
+  @Override
+  protected Object clone() throws CloneNotSupportedException {
+    return super.clone();
+  }
 
   public String getTitle() {
     return title;

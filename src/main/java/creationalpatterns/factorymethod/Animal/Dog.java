@@ -1,4 +1,4 @@
-package factorymethod;
+package creationalpatterns.factorymethod.Animal;
 
 public class Dog implements Animal {
   @Override

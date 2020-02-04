@@ -1,18 +1,17 @@
-import creationalpatterns.builder.LunchOrder;
+import creationalpatterns.factorymethod.Animal.Animal;
+import creationalpatterns.factorymethod.Animal.CreateDog;
+import creationalpatterns.factorymethod.Animal.Creator;
+import creationalpatterns.factorymethod.Animal.createCat;
 
 public class Main {
   public static void main(String[] args) {
-    LunchOrder.Builder builder = new LunchOrder.Builder();
-    LunchOrder myLunch =
-        builder
-            .bread("sliced bread")
-            .condiments("yes butter and sardine")
-            .dressing("foil wrapper")
-            .meat("steak")
-            .build();
-    System.out.println(myLunch.getBread());
-    System.out.println(myLunch.getCondiments());
-    System.out.println(myLunch.getDressing());
-    System.out.println(myLunch.getMeat());
+    playWithAnimal(new createCat());
+    playWithAnimal(new CreateDog());
+  }
+
+  public static void playWithAnimal(Creator creator) {
+    Animal animal = creator.create();
+    animal.eat();
+    animal.run();
   }
 }
