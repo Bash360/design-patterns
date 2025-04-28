@@ -2,13 +2,16 @@ package main
 
 import (
 	"design-patterns/creational"
+	"fmt"
 )
 func main(){
-	db := creational.NewDBConnection()
 
-	db.CreateConnection("postgres://localhost:5432/mydb")
+	windows,error:=creational.OSFactory("windows")
+	if error == nil{
+		windows.Spec()
+	}
+	fmt.Println(error)
+	
 
-
-	db.CreateConnection("postgres://localhost:5432/anotherdb")
 }
 
