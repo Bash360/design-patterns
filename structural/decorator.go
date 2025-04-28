@@ -17,7 +17,6 @@ type SugarDecorator struct{
 
 }
 
-
 func(p *SugarDecorator) Cost()float64{
 	return p.CoffeeObj.Cost() + 500
 }
