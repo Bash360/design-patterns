@@ -1,17 +1,13 @@
 package main
 
 import (
-	"design-patterns/creational"
-	"fmt"
+	"design-patterns/structural"
 )
 func main(){
 
-	windows,error:=creational.OSFactory("windows")
-	if error == nil{
-		windows.Spec()
-	}
-	fmt.Println(error)
-	
+creditCard := structural.CreditCard()
+
+creditCard.Withdraw("66738293738", 5000)
 
 }
 
