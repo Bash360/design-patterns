@@ -34,7 +34,7 @@ func(a *CreditCardProxy)  Withdraw(accountID string, amount float64) bool{
 	return a.bank.Withdraw(accountID , amount )
 }
 /*
-proxy an object that acts of behalf of another to protect, control access  or encapsulate it like a reverse or forward proxy acts as an intermediary between a client and a server
+proxy an object that acts on behalf of another to protect, control access  or encapsulate it like a reverse or forward proxy acts as an intermediary between a client and a server
 any interaction happens through the proxy not directly
 
 */
