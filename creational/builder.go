@@ -55,8 +55,8 @@ func (b *ConcreteCarBuilder) SetEngine(engine string) CarBuilder {
 
 /*
 used to create complex object
-decoupling an object from its representation
+decoupling the building of an object from the finished object
 parts: Product what we are trying to build, Builder, concrete builder implements the builder,Client the one that needs the product
-
+lets you build different objects without changing the build process
 
 */
