@@ -41,3 +41,10 @@ func(p *Postgres)CreateConnection(databaseUrl string){
 func NewDBConnection()*Postgres {
 return &Postgres{}
 }
+
+
+/*
+Used to create objects that we want only a single instance of throughout the application lifecycle
+
+
+*/
