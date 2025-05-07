@@ -39,7 +39,7 @@ func NotificationFactory(notificationType string,payload map[string]string) Noti
 } 
 
 /*
-used to create an object that can be of several types, with out revealing how they are create you have an interface that implements a common base for all the types
-then concrete implementations of the interface by the types 
-then the factory that does the initialization based on the type requested for
+used to create an object that can be of several types, without revealing how they are created you have an interface that implements a common base for all the types
+Then concrete implementations of the interface by the types 
+Then the factory that does the initialization based on the type requested for
 */
