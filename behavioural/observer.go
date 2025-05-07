@@ -48,7 +48,7 @@ fmt.Println("Email to ",e.Email,":",data)
 
 
 /*
-useful when we have a list of dependents on an object and they need to be notified automatically when theres a state change in the object kind of like in a pub/sub system
+useful when we have a list of dependents on an object and they need to be notified automatically when theres a state change in the object in a pub/sub system
 
 
 */
